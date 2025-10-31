@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Dark Mode for Brave",
+  "name": "Dark Mode",
   "version": "1.3",
   "description": "LENDARIO",
   "permissions": ["activeTab", "scripting"],
@@ -12,6 +12,13 @@
     "default_title": "Ativar modo escuro",
     "default_icon": "icon.png"
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["dark.css"],
+      "run_at": "document_start"
+    }
+  ],
   "icons": {
     "48": "icon.png"
   }
