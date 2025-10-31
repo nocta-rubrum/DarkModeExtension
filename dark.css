@@ -8,6 +8,10 @@ html, body, div {
     color: #e0e0e0 !important;
 }
 
+svg {
+    color: red !important;
+}
+
 * {
     background-color: transparent !important;
     /*background-color: gray !important;*/
